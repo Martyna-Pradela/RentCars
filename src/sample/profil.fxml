@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #336135;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ProfilController">
+   <children>
+      <AnchorPane layoutX="25.0" layoutY="25.0" prefHeight="250.0" prefWidth="350.0" style="-fx-background-color: #E7F3EC;">
+         <children>
+            <Label layoutX="40.0" layoutY="30.0" text="Imie:">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="69.0" text="Nazwisko:">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="113.0" text="E-mail:">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="namefx" layoutX="91.0" layoutY="31.0" text="Label">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font></Label>
+            <Label fx:id="last_namefx" layoutX="129.0" layoutY="70.0" text="Label">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font></Label>
+            <Label fx:id="mailfx" layoutX="107.0" layoutY="114.0" text="Label">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font></Label>
+            <Button fx:id="passwordB" layoutX="40.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#changePassword" style="-fx-background-color: #336135;" text="ZMIEŃ HASŁO" textFill="#e7f3ec">
+               <font>
+                  <Font name="System Bold" size="12.288000106811523" />
+               </font>
+            </Button>
+            <Button fx:id="closeB" layoutX="215.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#closeProfil" prefHeight="29.0" prefWidth="124.0" style="-fx-background-color: #336135;" text="WYJDŹ" textFill="#e7f3ec">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="deleteB" layoutX="41.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#deleteAccount" prefHeight="29.0" prefWidth="101.0" style="-fx-background-color: #336135;" text="USUŃ KONTO" textFill="#e7f3ec">
+               <font>
+                  <Font name="System Bold" size="12.257" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="600.0" maxWidth="400.0" minHeight="600.0" minWidth="400.0" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #336135;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="62.0" prefHeight="500.0" prefWidth="360.0" style="-fx-background-color: #E7F3EC;">
+         <children>
+            <Label layoutX="108.0" layoutY="8.0" text="Rejestracja" textFill="#336135">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font></Label>
+            <Label layoutX="61.0" layoutY="51.0" text="Imie">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstnametf" layoutX="61.0" layoutY="71.0" prefHeight="29.0" prefWidth="237.0" promptText="Imie" />
+            <Label layoutX="63.0" layoutY="110.0" text="Nazwisko">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastnametf" layoutX="61.0" layoutY="130.0" prefHeight="29.0" prefWidth="237.0" promptText="Nazwisko" />
+            <Label layoutX="63.0" layoutY="169.0" text="Pesel">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="peseltf" layoutX="61.0" layoutY="190.0" prefHeight="29.0" prefWidth="237.0" promptText="Pesel" />
+            <Label layoutX="64.0" layoutY="228.0" text="E-mail">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailtf" layoutX="61.0" layoutY="249.0" prefHeight="29.0" prefWidth="237.0" promptText="E-mail" />
+            <Label layoutX="65.0" layoutY="287.0" text="Hasło">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="346.0" text="Powtórz hasło">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveb" layoutX="94.0" layoutY="418.0" mnemonicParsing="false" onAction="#saveButtonOnAction" prefWidth="171.0" style="-fx-background-color: #336135;" text="ZAPISZ" textFill="#fdf3f2">
+               <font>
+                  <Font name="System Bold" size="12.288000106811523" />
+               </font></Button>
+            <Button fx:id="closeb" layoutX="93.0" layoutY="459.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefWidth="171.0" style="-fx-background-color: #336135;" text="WYJDŹ" textFill="#fdf3f2">
+               <font>
+                  <Font name="System Bold" size="12.3" />
+               </font>
+            </Button>
+            <Label fx:id="wrongPassword" layoutX="198.0" layoutY="347.0" text="Błędne hasło" textFill="#e80505" visible="false" />
+            <Label fx:id="allFields" layoutX="112.0" layoutY="396.0" text="Uzupełnij wszystkie pola" textFill="#fe0505" visible="false" />
+            <PasswordField fx:id="password2tf" layoutX="61.0" layoutY="367.0" prefHeight="29.0" prefWidth="237.0" promptText="Hasło" />
+            <PasswordField fx:id="passwordtf" layoutX="61.0" layoutY="308.0" prefHeight="29.0" prefWidth="237.0" promptText="Hasło" />
+         </children></AnchorPane>
+      <ImageView fx:id="logo" fitHeight="36.0" fitWidth="67.0" layoutX="40.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/car.png" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+      <Label layoutX="119.0" layoutY="19.0" prefHeight="29.0" prefWidth="127.0" text="AutoRent" textFill="#e7f3ec">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

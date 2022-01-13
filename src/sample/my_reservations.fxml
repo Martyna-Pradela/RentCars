@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="550.0" style="-fx-background-color: #336135;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MyReservationsController">
+    <children>
+        <Label fx:id="mail" layoutX="24.0" layoutY="18.0" text="Szukaj" textFill="#e7f3ec">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <TableView fx:id="productTableView" layoutX="20.0" layoutY="56.0" onMouseClicked="#cancelReservation" prefHeight="331.0" prefWidth="510.0" style="-fx-background-color: #E7F3EC;">
+            <columns>
+                <TableColumn fx:id="mark" prefWidth="78.68798637390137" text="Marka" />
+                <TableColumn fx:id="model" prefWidth="84.58399200439453" text="Model" />
+                <TableColumn fx:id="color" prefWidth="73.62399291992188" text="Kolor" />
+                <TableColumn fx:id="datew" prefWidth="95.0" text="Data wypo." />
+                <TableColumn fx:id="datez" prefWidth="84.0" text="Data zwr." />
+                <TableColumn fx:id="price" prefWidth="77.0" text="Cena (zł)" />
+            </columns>
+        </TableView>
+        <TextField fx:id="search" layoutX="78.0" layoutY="16.0" prefHeight="29.0" prefWidth="274.0" />
+        <ImageView fx:id="logo" fitHeight="25.0" fitWidth="57.0" layoutX="352.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../image/car.png" />
+            </image>
+            <effect>
+                <Glow />
+            </effect>
+        </ImageView>
+        <Button fx:id="close" layoutX="186.0" layoutY="397.0" mnemonicParsing="false" onAction="#closeCars" prefHeight="29.0" prefWidth="179.0" style="-fx-background-color: #336135;" text="WYJDŹ" textFill="#fdf3f2">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <effect>
+                <Glow />
+            </effect>
+        </Button>
+        <Hyperlink layoutX="-101.0" layoutY="175.0" text="Hyperlink" />
+      <Button fx:id="filter" layoutX="384.0" layoutY="16.0" mnemonicParsing="false" onMouseClicked="#filteredCars" style="-fx-background-color: #336135;" text="SORTUJ PO DACIE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.288000106811523" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Button>
+    </children>
+</Pane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="550.0" style="-fx-background-color: #336135;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ReservationController">
+   <children>
+      <AnchorPane layoutX="25.0" layoutY="25.0" prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: #E7F3EC;">
+         <children>
+            <ImageView fx:id="image" fitHeight="150.0" fitWidth="235.0" layoutX="139.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/3.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="mark" layoutX="143.0" layoutY="14.0" text="AUDI A4">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="151.0" layoutY="242.0" text="Cena: ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="price" layoutX="208.0" layoutY="242.0" text="1800">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="259.0" layoutY="242.0" text="zł">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonOK" layoutX="179.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#addToDataBase" prefHeight="31.0" prefWidth="160.0" style="-fx-background-color: #336135;" text="ZATWIERDŹ" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="151.0" layoutY="211.0" text="Data:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="datew" layoutX="202.0" layoutY="215.0" text="2021-11-20">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="287.0" layoutY="208.0" text="-">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="datez" layoutX="305.0" layoutY="215.0" text="2021-11-22">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

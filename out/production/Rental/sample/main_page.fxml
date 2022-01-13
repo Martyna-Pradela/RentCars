@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="400.0" maxWidth="550.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="550.0" style="-fx-background-color: #FDF3F2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainPageConnection">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="230.0" style="-fx-background-color: #336135;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="logo" fitHeight="94.0" fitWidth="219.0" focusTraversable="true" layoutX="24.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../image/car.png" />
+                    </image>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </ImageView>
+                <Label layoutX="36.0" layoutY="168.0" text="Wypożyczalnia" textFill="#e7f3ec">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="44.0" layoutY="203.0" prefHeight="43.0" prefWidth="154.0" text="samochodów" textFill="#e7f3ec">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="36.0" layoutY="257.0" text="AutoRent" textFill="#e7f3ec">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="320.0" style="-fx-background-color: #E7F3EC;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="st1" fitHeight="25.0" fitWidth="29.0" layoutX="26.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/strzalka.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="st2" fitHeight="25.0" fitWidth="29.0" layoutX="26.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/strzalka.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="st3" fitHeight="25.0" fitWidth="29.0" layoutX="26.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/strzalka.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="st4" fitHeight="25.0" fitWidth="29.0" layoutX="26.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/strzalka.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="loginfx" layoutX="66.0" layoutY="49.0" text="Zaloguj">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="registerfx" layoutX="66.0" layoutY="97.0" text="Załóż konto">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="carsfx" layoutX="66.0" layoutY="149.0" text="Samochody">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="contactfx" layoutX="66.0" layoutY="202.0" text="Kontakt">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

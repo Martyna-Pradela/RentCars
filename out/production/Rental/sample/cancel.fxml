@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #336135;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CancelController">
+   <children>
+      <AnchorPane layoutX="25.0" layoutY="25.0" prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #E7F3EC;">
+         <children>
+            <Label fx:id="markC" layoutX="22.0" layoutY="10.0" text="Label">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font></Label>
+            <Label fx:id="modelC" layoutX="23.0" layoutY="33.0" text="Label">
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="dateWC" layoutX="22.0" layoutY="56.0" text="2021-11-11">
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="dateZC" layoutX="125.0" layoutY="55.0" text="2021-11-11">
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="106.0" layoutY="45.0" text="-">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancelButton" layoutX="56.0" layoutY="107.0" mnemonicParsing="false" onMouseClicked="#cancel" style="-fx-background-color: #336135;" text="Anuluj rezerwacje" textFill="#e7f3ec">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="error" layoutX="24.0" layoutY="79.0" text="Nie można anulować rezerwacji" textFill="#d01212" visible="false">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
