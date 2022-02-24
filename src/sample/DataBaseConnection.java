@@ -11,7 +11,7 @@ public class DataBaseConnection {
 
     public Connection getConnection() {
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/db", "root", "Martyna96%");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/db", "root", "");
 
         } catch (Exception e) {
             e.printStackTrace();
